@@ -37,6 +37,7 @@ class TimbreFiscalDigital:
         la Resolución Miscelánea vigente. El sello debe ser expresado
         como una cadena de texto en formato Base 64.
     """
+
     class Meta:
         namespace = "http://www.sat.gob.mx/TimbreFiscalDigital"
 
@@ -47,7 +48,7 @@ class TimbreFiscalDigital:
             "name": "Version",
             "type": "Attribute",
             "required": True,
-        }
+        },
     )
     uuid: Optional[str] = field(
         default=None,
@@ -58,7 +59,7 @@ class TimbreFiscalDigital:
             "length": 36,
             "white_space": "collapse",
             "pattern": r"[a-f0-9A-F]{8}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{4}-[a-f0-9A-F]{12}",
-        }
+        },
     )
     fecha_timbrado: Optional[str] = field(
         default=None,
@@ -68,7 +69,7 @@ class TimbreFiscalDigital:
             "required": True,
             "white_space": "collapse",
             "pattern": r"(20[1-9][0-9])-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T(([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9])",
-        }
+        },
     )
     rfc_prov_certif: Optional[str] = field(
         default=None,
@@ -79,7 +80,7 @@ class TimbreFiscalDigital:
             "min_length": 12,
             "white_space": "collapse",
             "pattern": r"[A-Z&Ñ]{3}[0-9]{2}(0[1-9]|1[012])(0[1-9]|[12][0-9]|3[01])[A-Z0-9]{2}[0-9A]",
-        }
+        },
     )
     leyenda: Optional[str] = field(
         default=None,
@@ -90,7 +91,7 @@ class TimbreFiscalDigital:
             "max_length": 150,
             "white_space": "collapse",
             "pattern": r"([A-Z]|[a-z]|[0-9]| |Ñ|ñ|!|\"|%|&|'|´|-|:|;|>|=|<|@|_|,|\{|\}|`|~|á|é|í|ó|ú|Á|É|Í|Ó|Ú|ü|Ü){1,150}",
-        }
+        },
     )
     sello_cfd: Optional[str] = field(
         default=None,
@@ -99,7 +100,7 @@ class TimbreFiscalDigital:
             "type": "Attribute",
             "required": True,
             "white_space": "collapse",
-        }
+        },
     )
     no_certificado_sat: Optional[str] = field(
         default=None,
@@ -110,7 +111,7 @@ class TimbreFiscalDigital:
             "length": 20,
             "white_space": "collapse",
             "pattern": r"[0-9]{20}",
-        }
+        },
     )
     sello_sat: Optional[str] = field(
         default=None,
@@ -119,5 +120,5 @@ class TimbreFiscalDigital:
             "type": "Attribute",
             "required": True,
             "white_space": "collapse",
-        }
+        },
     )

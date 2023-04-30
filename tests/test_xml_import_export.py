@@ -87,5 +87,5 @@ class TestXMLImportExport(unittest.TestCase):
         assert_equal_xml(self, xml_data.encode("utf-8"), fixture)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     unittest.main()
