@@ -1,5 +1,5 @@
-PYCFDI
-======
+Simple CFDI
+===========
 
 
 Python library to manipulate CFDI (Comprobante Fiscal Digital por Internet) files.
@@ -11,6 +11,7 @@ more details.
 ## Installation
 
 ```bash
-pip install pycfdi
+pip install simple_cfdi
+
 ```
 

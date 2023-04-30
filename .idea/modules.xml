@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/../pycfdi/.idea/pycfdi.iml" filepath="$PROJECT_DIR$/../pycfdi/.idea/pycfdi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../simple-cfdi/.idea/simple-cfdi.iml" filepath="$PROJECT_DIR$/../simple-cfdi/.idea/simple-cfdi.iml" />
     </modules>
   </component>
 </project>

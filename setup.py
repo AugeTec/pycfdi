@@ -18,7 +18,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="pycfdi",
+    name="simple-cfdi",
     use_scm_version=True,
     setup_requires=["setuptools_scm"],
     author="Alexis Lopez Zubieta",
@@ -26,7 +26,7 @@ setuptools.setup(
     description="CFDI document manipulation library",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/AugeTec/pycfdi",
+    url="https://github.com/AugeTec/simple-cfdi",
     project_urls={
         "Bug Tracker": "https://github.com/AugeTec/pycfdi/issues",
         "Source Code": "https://github.com/AugeTec/pycfdi",
@@ -41,5 +41,5 @@ setuptools.setup(
         "xsdata",
     ],
     python_requires=">=3.6",
-    package_dir={"pycfdi": "pycfdi"},
+    package_dir={"simple_cfdi": "simple_cfdi"},
 )

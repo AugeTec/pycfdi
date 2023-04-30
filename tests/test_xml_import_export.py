@@ -6,7 +6,7 @@ from xsdata.formats.dataclass.parsers import XmlParser
 from xsdata.formats.dataclass.serializers import XmlSerializer
 from xsdata.formats.dataclass.serializers.config import SerializerConfig
 
-from pycfdi.spec import CFDI_4_0_NAMESPACES, CFDI_4_0_SCHEMA_LOCATION, Comprobante
+from simple_cfdi.spec import CFDI_4_0_NAMESPACES, CFDI_4_0_SCHEMA_LOCATION, Comprobante
 from tests.utils import assert_equal_xml
 
 

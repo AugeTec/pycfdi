@@ -43,10 +43,10 @@ rm "$SCHEMAS_DIR/catalogos/catCFDI.xsd.bak"
 export XSDATA_SCHEMA="cfd"
 export XSDATA_VERSION="4_0"
 export XSDATA_LANG=spanish
-xsdata generate "$SCHEMAS_DIR" -r -c './utils/xsdata.xml' -p lib.spec
+xsdata generate "$SCHEMAS_DIR" -r -c './utils/xsdata.xml' -p 'simple_cfdi.spec'
 
 ## Add schema location and namespace map to package lib/__init__.py
-cat <<EOF >>lib/spec/__init__.py
+cat <<EOF >>simple_cfdi/spec/__init__.py
 
 CFDI_4_0_SCHEMA_LOCATION = "http://www.sat.gob.mx/cfd/4 http://www.sat.gob.mx/sitio_internet/cfd/4/cfdv40.xsd"
 
